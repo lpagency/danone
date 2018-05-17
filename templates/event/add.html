@@ -1,5 +1,3 @@
-<!-- generar evento -->
-<!--link rel="stylesheet" href="{{ site_base }}/{{ nocache_static }}/bower_components/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" /-->
 <div id="g-evento-a" class="loginpopup step_two">
     <form action="{{ site.url }}event/add" method="post" acceptcharset="UTF-8" enctype="multipart/form-data" class="event-add-form" >
         <div class="g-header-form">
@@ -20,7 +18,6 @@
             <label class="control-label">Lugar</label>
             <input required name="place" id="" placeholder="Deja el nombre del recinto" class="form-control" type="text"
             value="{% if data is not None %}{{data.place}}{% end %}">
-            <!-- <div for="name" class="error g-alert" >Nombre no puede estar vacío</div> -->
         </div>
         <div class="form-group required" >
             <label class="control-label" >Fecha</label>
@@ -69,8 +66,3 @@
         <button type="submit" class="submit_event_form" ><a>publicar</a></button>
     </form>
 </div>
-<!--script>
-    moment().format();
-    moment().format("DD/MM/YYYY, h:mm:ss a");
-</script-->
-<!-- generar evento-->
